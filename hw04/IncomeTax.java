@@ -2,6 +2,7 @@
 // CSE 2
 // September 23, 2014
 // HW 04
+// given input the program is supposed to calculate the income tax that should be paid 
     // import the scanner
     import java.util.Scanner;
     // name the class
@@ -14,26 +15,20 @@
             // promt the user for the input number 
             System.out.print("Enter your income as an integer");
             // define the variable that the user will input
-            int income = myScanner.nextInt();
-            if(myScanner.hasNextInt()) {
-                else {
-                    System.out.println("You did not enter an int");
-                    return;
-                }
+           int income = myScanner.nextInt();
                 
-            double tax = 0.00  ;
-            //check if input is integer
+            double tax = 0.00  ; // defines tax as originally 0 which will chanage based on input
 
-             if (income < 20) { 
+             if (income < 20) {  // for income less than 20
                     tax = income * 0.05;
                  }
-                 else if (income < 40) {
+                 else if (income < 40) { // for income less than 40
                     tax = income * 0.07;
                  }
-                 else if (income < 78) {
+                 else if (income < 78) { // for income less than 78
                     tax = income * 0.12; 
                  }
-                 else {
+                 else {                 // for income greater than 78
                     tax = income * 0.14;
                  }
                 
