@@ -19,16 +19,16 @@
             // define the strings that the input character will be checked against
             String a = "a", n = "n", c = "c", A = "A", N = "N", C = "C";
             String s = "s", S = "S", m = "m", M = "M", p = "p", P = "P", l = "l", L = "L";
+            // depending on what the user enters, the program switches what is going to ask next
                 switch (ch) {
+                    // asks what they want on their burger
                  case 'b': System.out.println("Enter A or a for all the fixins\n");
                            System.out.println("Enter C or c for cheese\n");
                            System.out.println("N or n for none of the above\n");
-                           Scanner burger = new Scanner(System.in);
+                           Scanner burger = new Scanner(System.in); // needed for the user input
     
-                              String second = burger.next();
-                              char cd = second.charAt(0);
-                          // String a = "a", n = "n", c = "c", A = "a", N = "N", C = "C";
-                           
+                              String second = burger.next(); // converts the user input into string
+                                // Checks what the user entered and then displays an approritate respose
                                if (second.equals(a)) {
                                    System.out.println("You ordered a burger with everything");
                                    return;
@@ -58,14 +58,13 @@
                                return;
                             }
                          
-                           
+                           // asks what they want on their burger
                 case 'B':  System.out.println("Enter A or a for all the fixins\n");
                            System.out.println("Enter C or c for cheese\n");
                            System.out.println("N or n for none of the above\n");
-                           Scanner burger1 = new Scanner(System.in);
+                           Scanner burger1 = new Scanner(System.in); // needed for the user input
                            String second1 = burger1.nextLine();
-                          // String a = "a", n = "n", c = "c", A = "a", N = "N", C = "C";
-                          //if (second1.hasNextLine()) {
+                            // checks what the user entered and then displays an approritate reponse 
                                if (second1.equals(a)) {
                                    System.out.println("You ordered a burger with everything");
                                    return;
@@ -94,14 +93,15 @@
                                System.out.println("Please enter one of the options");
                                return;
                            }
+                           // asks what kind of soda they want 
                 case 's':  System.out.println("Enter P or p for Pepsi\n");
                            System.out.println("Enter C or c for Coke\n");
                            System.out.println("M or m for Mountain Dew\n");
                            System.out.println("S or s for Sprite\n");
-                           Scanner third = new Scanner(System.in);
+                           Scanner third = new Scanner(System.in); // needed for the user input
                            String soda = third.nextLine();
-                          // String a = "a", n = "n", c = "c", A = "a", N = "N", C = "C";
-                          //if (second1.hasNextLine()) {
+                         
+                          // checks what the user entered and then displays an approritate reponse 
                                if (soda.equals(p)) {
                                    System.out.println("You ordered a Pepsi");
                                    return;
@@ -138,14 +138,14 @@
                                System.out.println("Please enter one of the options");
                                return;
                            }
+                           // asks what kind of soda they want 
                 case 'S':  System.out.println("Enter P or p for Pepsi\n");
                            System.out.println("Enter C or c for Coke\n");
                            System.out.println("M or m for Mountain Dew\n");
                            System.out.println("S or s for Sprite\n");
-                           Scanner third1 = new Scanner(System.in);
+                           Scanner third1 = new Scanner(System.in); //needed for user input
                            String soda1 = third1.nextLine();
-                          // String a = "a", n = "n", c = "c", A = "a", N = "N", C = "C";
-                          //if (second1.hasNextLine()) {
+                           // checks what the user entered and then displays an approritate reponse 
                                if (soda1.equals(p)) {
                                    System.out.println("You ordered a Pepsi");
                                    return;
@@ -182,12 +182,13 @@
                                System.out.println("Please enter one of the options");
                                return;
                            } 
+                           // asks what size of fries they wnat 
                  case 'f': System.out.println("Enter s or S for Small\n");
                            System.out.println("Enter M or m for Medium\n");
                            System.out.println("Enter L or l for Large\n");
-                           Scanner fourth = new Scanner(System.in);
+                           Scanner fourth = new Scanner(System.in); // needed for user input 
                            String fries = fourth.nextLine();
-                          //if (second1.hasNextLine()) {
+                           // checks what the user entered and then displays an approritate reponse 
                                if (fries.equals(s)) {
                                    System.out.println("You ordered small fries");
                                    return;
@@ -216,12 +217,13 @@
                                System.out.println("Please enter one of the options");
                                return;
                            } 
+                           // asks what size fries they want 
                  case 'F': System.out.println("Enter s or S for Small\n");
                            System.out.println("Enter M or m for Medium\n");
                            System.out.println("Enter L or l for Large\n");
-                           Scanner fourth1 = new Scanner(System.in);
+                           Scanner fourth1 = new Scanner(System.in); // needed for user input 
                            String fries1 = fourth1.nextLine();
-                          //if (second1.hasNextLine()) {
+                     // checks what the user entered and then displays an approritate reponse 
                                if (fries1.equals(s)) {
                                    System.out.println("You ordered small fries");
                                    return;
