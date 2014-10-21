@@ -54,13 +54,13 @@ import java.util.Scanner;
                     j++; 
             }while (j<=(i*2)-1);  // runs to print the number of characters (1,3,5,ect) in each line
             k++;
-            System.out.print("\n");
+            System.out.print("\n"); // creates a new line for each number  
         }while( k <= i);
            i++;
-           System.out.print("---");
-           System.out.print("\n");
+           System.out.print("---"); // septerates the numbers with ---
+           System.out.print("\n"); // creates a new line for the different number 
         
-    }while(i <= user);
+    }while(i <= user);      // runs loop until the number of lines has been printed 
     }
 }
     
