@@ -3,7 +3,7 @@
 // October 28, 2014
 //  Use overloaded methods
 import java.util.Scanner;
-public class HW08 {
+public class HW8 {
 	public static void main(String[] arg) {
 		Scanner scan = new Scanner(System.in); // defining the input variable for the user 
 		System.out.print("Enter 'C' or 'c' to continue, anything else to quit- "); // ask the user to enter an input 
