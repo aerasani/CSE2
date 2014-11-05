@@ -4,26 +4,37 @@
 // HW 07
 // Create a loop that stacks the numebr which the user entered 
 import java.util.Scanner;
-    public class NumberStack {
-    public static void main (String [] args){
-        Scanner input = new Scanner(System.in); // defining the scanner variable
-        System.out.print("Enter an integer from 1 - 9:"); // asking the user for an input
-        int user = input.nextInt(); // defining the variable that the user inputs as integer
-        System.out.println("Using for loops");
-      int i;    
-        for (i = 1; i <= user; i++){        // runs loop until the number of lines has been printed 
-            for (int k = 1; k<=i; k++){   // prints out the number of lines ( 7 lines for number 7) 
-              for (int j = 1; j<=(i*2)-1; j++){ // runs to print the number of characters (1,3,5,ect) in each line
-                    System.out.print(+i);   
-                    
+public class NumberStack {
+    public static void main(String[] args) {
+            Scanner input = new Scanner(System.in); // defining the scanner variable
+            System.out.print("Enter an integer from 1 - 9:"); // asking the user for an input
+            int user = input.nextInt(); // defining the variable that the user inputs as integer
+            System.out.println("Using for loops");
+            int i, j = 1;
+            for (i = 1; i <= user; i++) { // runs loop until the number of lines has been printed 
+            
+                for (int k = 1; k <= i; k++) { // prints out the number of lines ( 7 lines for number 7)
+                
+                    for(int d = 1; d<= (user - i); d++){
+                        System.out.print(" ");               
+                    }
+                    for (j = 1; j <= (i * 2) - 1; j++) { // runs to print the number of characters (1,3,5,ect) in each line
+                        System.out.print(+i);
+                    }
+                    System.out.print("\n"); // creates a new line for each number
                 }
-                System.out.print("\n"); // creates a new line for each number
-              
-           }
-            System.out.print("---");            // seperates the numbers with ---
-            System.out.print("\n");             // creates a new line for the different number
+                  for(int d = 1; d<= (user - i); d++){
+                        System.out.print(" ");               
+                    }
+                for (int z = 1; z <= (i * 2) - 1; z++) {
+                    System.out.print("-");
+                }
+                System.out.print("\n"); // creates a new line for the different number
         } 
-            System.out.println("Using while loops");
+                    for (int n = 1; n<=user-1; n++){
+                        System.out.print("   ");
+                }
+       /*     System.out.println("Using while loops");
         i = 0;
         int k, j;
         while (i <= user){  // runs loop until the number of lines has been printed 
@@ -61,6 +72,10 @@ import java.util.Scanner;
            System.out.print("\n"); // creates a new line for the different number 
         
     }while(i <= user);      // runs loop until the number of lines has been printed 
+    
+    */
     }
 }
+
+
     
