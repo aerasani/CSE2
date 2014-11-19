@@ -6,21 +6,30 @@ public class LoopTheLoop{
     
     public static void main(String [] args) {
     int nStars = 10;
-    int counter = 0;
-    /*while (counter < nStars){
+    int i = 0;
+    int j = 0;
+    while (i < nStars){
+        j = 0;
+        while ( j <= i){
         System.out.print("*");
-        counter++;
-    }*/
+        j++;
+        }
+        System.out.print("\n");
+        i++;
+     }
+
     
     System.out.println("part 2:");
     
-    for (int i = 0; i < nStars; i++){
-        for (int j = 0; j <=i; j++){
+    for ( i = 0; i < nStars; i++){
+        for ( j = 0; j <=i; j++){
             System.out.print("*");
         }
         System.out.print("\n");
-        
     }
+    }
+}
+/*
     System.out.println("Part 3:");
     Scanner input = new Scanner(System.in);
     System.out.println("Enter a int bewteen 1-15");

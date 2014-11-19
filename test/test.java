@@ -1,56 +1,33 @@
-    
-    
-    
-    
-    import java.util.Scanner;
-    public class test { // name the class
-        public static void main (String [] args) { 
-                Scanner scan = new Scanner(System.in);
-                System.out.println("Enter a number");
-                int input = scan.nextInt();
-            if (input == 1 || input == 0 || input == 10 || input == 11 || input == 100 || input == 101 || input == 110 || input == 111){ 
-                if (input == 1 || input == 0){
-                    double single = input * Math.pow(2,0);
-                    int one = (int) single;
-                    System.out.println(one);
-                 }
-                 else if (input == 10 || input == 11){
-                     int twonumdigit1 = input/10;
-                     int twonumdigit2 = input%10;
-                     double answer1 = (twonumdigit1* (Math.pow(2,1)));
-                     double answer2 = (twonumdigit2 * (Math.pow(2,0)));
-                     int onetwo = (int)answer1;
-                     int twotwo = (int) answer2;
-                     System.out.println(+onetwo+twotwo);
-                 }
-                 else if (input == 100 || input == 101 || input == 110 || input == 111){
-                     int threenumdigit1 = input/100;
-                     int threenumdigit2 = (input%100)/10;
-                     int threenumdigit3 = (input%100)%10;
-                     double numdigit1 = (threenumdigit1 * (Math.pow(2,2)));
-                     double numdigit2 = (threenumdigit2 * (Math.pow(2,1)));
-                     double numdigit3 = (threenumdigit3 * (Math.pow(2,0)));
-                     int onethree = (int) numdigit1;
-                     int twothree = (int) numdigit2;
-                     int threethree = (int) numdigit3;
-                     System.out.println(+onethree+twothree+threethree);
-                 }
+// Ashish Erasani
+// CSE 2 Test Practice
+// Fuck CSE 2
+
+public class test {
+    public static void main(String[] args) {
+        int i = 0;
+        int j = 1;
+        int k = 1;
+        for (i = 1; i < 4; i++){
+            for (j = 1; j < 3; j++){
+                for ( k = 0; k < j; k++){
+                    System.out.println("("+ i + "," + j +")");
+                }
             }
-                 else {
-                     System.out.println("Did not enter one of the numbers");
-                 }
+           i++;
+        }
+    for (int u = 6; u >= 1; u--){
+        System.out.println(" [ " + ((u*5)+1) + "]");
+    }
+    for (i = 1; i <= 3; i++){
+        for (j = 0; j <= i; j++){
+            for(k = 0; k <= j; k++ ){
+                System.out.print("b");
+            }
+            System.out.print("\n");
             
-                 
-                 
-                 
-                 
-                 
-                 
-                 
-         }
+        }
     }
     
+    }
+}
     
-
-
-            
