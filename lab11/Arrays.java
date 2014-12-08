@@ -1,5 +1,6 @@
 // Ashish Erasani
 // CSE 2
+// Lab 11
 // Arrays
 import java.util.Scanner;
 public class Arrays{
@@ -34,14 +35,11 @@ public class Arrays{
     System.out.println("The sum is: " +add);
     
      for (int i = 0; i < userarray.length; i++){
-       System.out.println(+userarray[i]);
+       System.out.print(+userarray[i]);
+       System.out.print("   ");
+       System.out.print(+userarray[(userarray.length - 1) - i]);
+       System.out.println(" ");
    }
    
-   System.out.println("low to high");
-    
-    for (int i = (userarray.length - 1); i >=  0; i--){
-        System.out.println(+userarray[i]);
-    }
-    
     }
 }
